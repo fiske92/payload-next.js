@@ -2,12 +2,7 @@ import { RenderBlocks } from '@/utils/RenderBlocks'
 import axios from 'axios'
 
 export default function Page({ page }) {
-  console.log(page)
-  return (
-    <div>
-      <RenderBlocks layout={page.content} />
-    </div>
-  )
+  return <RenderBlocks layout={page.content} />
 }
 
 export const getStaticPaths = async () => {
