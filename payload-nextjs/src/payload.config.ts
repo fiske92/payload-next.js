@@ -10,6 +10,7 @@ import { Media } from './collections/Media'
 import { Pages } from './collections/Pages'
 
 export default buildConfig({
+  serverURL: 'http://localhost:4000',
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
